@@ -1,0 +1,1 @@
+export { VehicleListMapView } from './VehicleListMapView';
