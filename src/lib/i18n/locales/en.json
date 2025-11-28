@@ -1,0 +1,132 @@
+{
+    "common": {
+        "signIn": "Sign In",
+        "signOut": "Sign Out",
+        "search": "Search",
+        "filter": "Filter",
+        "book": "Book",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "submit": "Submit",
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "view": "View",
+        "close": "Close"
+    },
+    "navigation": {
+        "home": "Home",
+        "search": "Search",
+        "bookings": "Bookings",
+        "vehicles": "Vehicles",
+        "profile": "Profile",
+        "admin": "Admin",
+        "host": "Host"
+    },
+    "home": {
+        "title": "REBIL - Redefining Car Rental Forever",
+        "subtitle": "Revolutionary peer-to-peer car rental platform connecting car owners with renters",
+        "heroTitle": "Redefining Car Rental Forever",
+        "heroSubtitle": "Connect with car owners and renters in your area. Skip the traditional rental hassles and experience the future of peer-to-peer mobility.",
+        "howItWorks": "How REBIL Works",
+        "forRenters": "For Renters",
+        "forHosts": "For Hosts",
+        "safetyFirst": "Safety First",
+        "safetyDescription": "Your security is our priority. Every transaction is protected with comprehensive verification, insurance coverage, and secure payments.",
+        "steps": {
+            "renter": {
+                "step1": {
+                    "title": "Search & Filter",
+                    "description": "Find available cars near your location with smart filters"
+                },
+                "step2": {
+                    "title": "Instant Booking",
+                    "description": "Reserve cars instantly with flexible terms and insurance options"
+                },
+                "step3": {
+                    "title": "Secure Payment",
+                    "description": "Pay securely with transparent pricing and no hidden fees"
+                }
+            },
+            "host": {
+                "step1": {
+                    "title": "List Your Car",
+                    "description": "Add your vehicle details, set availability and pricing"
+                },
+                "step2": {
+                    "title": "Manage Bookings",
+                    "description": "Control your schedule and connect with renters easily"
+                },
+                "step3": {
+                    "title": "Earn Revenue",
+                    "description": "Get paid securely for each rental with insurance protection"
+                }
+            }
+        },
+        "features": {
+            "perfectForTravelers": "Perfect for Travelers",
+            "perfectForTravelersDesc": "Skip expensive rental counters and enjoy personalized, affordable car rentals",
+            "earnExtraIncome": "Earn Extra Income",
+            "earnExtraIncomeDesc": "Turn your unused car into a source of passive income with flexible hosting"
+        },
+        "safety": {
+            "verifiedUsers": "Verified Users",
+            "verifiedUsersDesc": "ID checks, background verification, and facial recognition",
+            "insuranceCoverage": "Insurance Coverage",
+            "insuranceCoverageDesc": "Comprehensive protection for both hosts and renters",
+            "securePayments": "Secure Payments",
+            "securePaymentsDesc": "Encrypted payment gateways and transparent pricing"
+        }
+    },
+    "cta": {
+        "title": "Ready to Join the REBIL Community?",
+        "subtitle": "Whether you're looking to rent a car or earn money from your vehicle, REBIL makes it simple, safe, and rewarding."
+    },
+    "footer": {
+        "tagline": "Redefining car rental through peer-to-peer connections.",
+        "forRenters": "For Renters",
+        "forHosts": "For Hosts",
+        "company": "Company",
+        "findCars": "Find Cars",
+        "howItWorks": "How It Works",
+        "insurance": "Insurance",
+        "support": "Support",
+        "listYourCar": "List Your Car",
+        "earningsCalculator": "Earnings Calculator",
+        "hostProtection": "Host Protection",
+        "resources": "Resources",
+        "aboutUs": "About Us",
+        "safety": "Safety",
+        "contact": "Contact",
+        "terms": "Terms",
+        "copyright": "© 2025 REBIL. All rights reserved."
+    },
+    "host": {
+        "title": "REBIL - Host",
+        "active": "Active",
+        "online": "Online",
+        "offline": "Offline",
+        "month": "Month",
+        "reviews": "reviews",
+        "addVehicle": "Add Vehicle",
+        "offlineBookings": "Offline",
+        "reviewsButton": "Reviews",
+        "allVehicles": "All Vehicles",
+        "inactive": "Inactive",
+        "pendingApproval": "Pending Approval",
+        "grid": "Grid",
+        "list": "List",
+        "recentBookings": "Recent Bookings Across All Vehicles",
+        "viewAll": "View All",
+        "reject": "Reject",
+        "approve": "Approve",
+        "markActive": "Mark Active",
+        "leaveReview": "Leave Review"
+    }
+}

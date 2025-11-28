@@ -1,0 +1,110 @@
+{
+    "common": {
+        "signIn": "Masuk",
+        "signOut": "Keluar",
+        "search": "Cari",
+        "filter": "Filter",
+        "book": "Pesan",
+        "cancel": "Batal",
+        "confirm": "Konfirmasi",
+        "submit": "Kirim",
+        "loading": "Memuat...",
+        "error": "Kesalahan",
+        "success": "Berhasil",
+        "back": "Kembali",
+        "next": "Selanjutnya",
+        "previous": "Sebelumnya",
+        "save": "Simpan",
+        "edit": "Edit",
+        "delete": "Hapus",
+        "view": "Lihat",
+        "close": "Tutup"
+    },
+    "navigation": {
+        "home": "Beranda",
+        "search": "Cari",
+        "bookings": "Pemesanan",
+        "vehicles": "Kendaraan",
+        "profile": "Profil",
+        "admin": "Admin",
+        "host": "Host"
+    },
+    "home": {
+        "title": "REBIL - Revolusi Rental Mobil Selamanya",
+        "subtitle": "Platform rental mobil peer-to-peer revolusioner yang menghubungkan pemilik mobil dengan penyewa",
+        "heroTitle": "Revolusi Rental Mobil Selamanya",
+        "heroSubtitle": "Terhubung dengan pemilik mobil dan penyewa di area Anda. Lewati masalah rental tradisional dan rasakan masa depan mobilitas peer-to-peer.",
+        "howItWorks": "Cara Kerja REBIL",
+        "forRenters": "Untuk Penyewa",
+        "forHosts": "Untuk Host",
+        "safetyFirst": "Keamanan Utama",
+        "safetyDescription": "Keamanan Anda adalah prioritas kami. Setiap transaksi dilindungi dengan verifikasi komprehensif, asuransi, dan pembayaran aman.",
+        "steps": {
+            "renter": {
+                "step1": {
+                    "title": "Cari & Filter",
+                    "description": "Temukan mobil yang tersedia di dekat lokasi Anda dengan filter pintar"
+                },
+                "step2": {
+                    "title": "Pemesanan Instan",
+                    "description": "Reservasi mobil secara instan dengan persyaratan fleksibel dan opsi asuransi"
+                },
+                "step3": {
+                    "title": "Pembayaran Aman",
+                    "description": "Bayar dengan aman dengan harga transparan dan tanpa biaya tersembunyi"
+                }
+            },
+            "host": {
+                "step1": {
+                    "title": "Daftarkan Mobil Anda",
+                    "description": "Tambahkan detail kendaraan, atur ketersediaan dan harga"
+                },
+                "step2": {
+                    "title": "Kelola Pemesanan",
+                    "description": "Kontrol jadwal Anda dan terhubung dengan penyewa dengan mudah"
+                },
+                "step3": {
+                    "title": "Dapatkan Pendapatan",
+                    "description": "Dibayar dengan aman untuk setiap rental dengan perlindungan asuransi"
+                }
+            }
+        },
+        "features": {
+            "perfectForTravelers": "Sempurna untuk Wisatawan",
+            "perfectForTravelersDesc": "Lewati konter rental mahal dan nikmati rental mobil yang personal dan terjangkau",
+            "earnExtraIncome": "Dapatkan Penghasilan Tambahan",
+            "earnExtraIncomeDesc": "Ubah mobil yang tidak terpakai menjadi sumber pendapatan pasif dengan hosting fleksibel"
+        },
+        "safety": {
+            "verifiedUsers": "Pengguna Terverifikasi",
+            "verifiedUsersDesc": "Pemeriksaan KTP, verifikasi latar belakang, dan pengenalan wajah",
+            "insuranceCoverage": "Perlindungan Asuransi",
+            "insuranceCoverageDesc": "Perlindungan komprehensif untuk host dan penyewa",
+            "securePayments": "Pembayaran Aman",
+            "securePaymentsDesc": "Gateway pembayaran terenkripsi dan harga transparan"
+        }
+    },
+    "cta": {
+        "title": "Siap Bergabung dengan Komunitas REBIL?",
+        "subtitle": "Baik Anda ingin menyewa mobil atau menghasilkan uang dari kendaraan Anda, REBIL membuatnya sederhana, aman, dan menguntungkan."
+    },
+    "footer": {
+        "tagline": "Mendefinisikan ulang rental mobil melalui koneksi peer-to-peer.",
+        "forRenters": "Untuk Penyewa",
+        "forHosts": "Untuk Host",
+        "company": "Perusahaan",
+        "findCars": "Cari Mobil",
+        "howItWorks": "Cara Kerja",
+        "insurance": "Asuransi",
+        "support": "Dukungan",
+        "listYourCar": "Daftarkan Mobil Anda",
+        "earningsCalculator": "Kalkulator Pendapatan",
+        "hostProtection": "Perlindungan Host",
+        "resources": "Sumber Daya",
+        "aboutUs": "Tentang Kami",
+        "safety": "Keamanan",
+        "contact": "Kontak",
+        "terms": "Syarat",
+        "copyright": "© 2025 REBIL. Semua hak dilindungi."
+    }
+}
