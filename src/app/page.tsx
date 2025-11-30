@@ -15,6 +15,66 @@ export default function Home() {
         setMounted(true);
     }, []);
 
+    const renterSteps = [
+        {
+            number: 1,
+            title: t('home.steps.renter.step1.title'),
+            description: t('home.steps.renter.step1.description'),
+        },
+        {
+            number: 2,
+            title: t('home.steps.renter.step2.title'),
+            description: t('home.steps.renter.step2.description'),
+        },
+        {
+            number: 3,
+            title: t('home.steps.renter.step3.title'),
+            description: t('home.steps.renter.step3.description'),
+        },
+    ];
+
+    const hostSteps = [
+        {
+            number: 1,
+            title: t('home.steps.host.step1.title'),
+            description: t('home.steps.host.step1.description'),
+        },
+        {
+            number: 2,
+            title: t('home.steps.host.step2.title'),
+            description: t('home.steps.host.step2.description'),
+        },
+        {
+            number: 3,
+            title: t('home.steps.host.step3.title'),
+            description: t('home.steps.host.step3.description'),
+        },
+    ];
+
+    const safetyItems = [
+        {
+            key: 'verifiedUsers',
+            icon: '🛡️',
+            title: t('home.safety.verifiedUsers'),
+            description: t('home.safety.verifiedUsersDesc'),
+            wrapperClass: '',
+        },
+        {
+            key: 'insuranceCoverage',
+            icon: '🔒',
+            title: t('home.safety.insuranceCoverage'),
+            description: t('home.safety.insuranceCoverageDesc'),
+            wrapperClass: '',
+        },
+        {
+            key: 'securePayments',
+            icon: '💳',
+            title: t('home.safety.securePayments'),
+            description: t('home.safety.securePaymentsDesc'),
+            wrapperClass: 'sm:col-span-2 lg:col-span-1',
+        },
+    ];
+
     // Prevent hydration mismatch - render simple loading state on server
     if (!mounted) {
         return (
@@ -38,7 +98,7 @@ export default function Home() {
             <HeroSection />
 
             {/* Features Section */}
-            <section className="py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-12 bg-white">
+            <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-16 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-black mb-8 sm:mb-10">
                         {t('home.howItWorks')}
@@ -50,51 +110,23 @@ export default function Home() {
                                 {t('home.forRenters')}
                             </h3>
                             <div className="space-y-4 sm:space-y-6">
-                                <div className="flex items-start gap-3 sm:gap-4">
-                                    <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 border border-gray-300">
-                                        <span className="text-black font-bold text-sm sm:text-base lg:text-lg">
-                                            1
-                                        </span>
+                                {renterSteps.map((step) => (
+                                    <div key={step.number} className="flex items-start gap-3 sm:gap-4">
+                                        <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 border border-gray-300">
+                                            <span className="text-black font-bold text-sm sm:text-base lg:text-lg">
+                                                {step.number}
+                                            </span>
+                                        </div>
+                                        <div className="flex-1">
+                                            <h4 className="font-semibold text-black text-base sm:text-lg mb-1 sm:mb-2">
+                                                {step.title}
+                                            </h4>
+                                            <p className="text-gray-600 text-sm sm:text-base">
+                                                {step.description}
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div className="flex-1">
-                                        <h4 className="font-semibold text-black text-base sm:text-lg mb-1 sm:mb-2">
-                                            {t('home.steps.renter.step1.title')}
-                                        </h4>
-                                        <p className="text-gray-600 text-sm sm:text-base">
-                                            {t('home.steps.renter.step1.description')}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3 sm:gap-4">
-                                    <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 border border-gray-300">
-                                        <span className="text-black font-bold text-sm sm:text-base lg:text-lg">
-                                            2
-                                        </span>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h4 className="font-semibold text-black text-base sm:text-lg mb-1 sm:mb-2">
-                                            {t('home.steps.renter.step2.title')}
-                                        </h4>
-                                        <p className="text-gray-600 text-sm sm:text-base">
-                                            {t('home.steps.renter.step2.description')}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3 sm:gap-4">
-                                    <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 border border-gray-300">
-                                        <span className="text-black font-bold text-sm sm:text-base lg:text-lg">
-                                            3
-                                        </span>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h4 className="font-semibold text-black text-base sm:text-lg mb-1 sm:mb-2">
-                                            {t('home.steps.renter.step3.title')}
-                                        </h4>
-                                        <p className="text-gray-600 text-sm sm:text-base">
-                                            {t('home.steps.renter.step3.description')}
-                                        </p>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                         <div className="bg-gradient-to-br from-gray-800 to-black rounded-2xl p-6 sm:p-8 text-white order-1 lg:order-2">
@@ -131,51 +163,23 @@ export default function Home() {
                                 {t('home.forHosts')}
                             </h3>
                             <div className="space-y-4 sm:space-y-6">
-                                <div className="flex items-start gap-3 sm:gap-4">
-                                    <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 border border-gray-300">
-                                        <span className="text-black font-bold text-sm sm:text-base lg:text-lg">
-                                            1
-                                        </span>
+                                {hostSteps.map((step) => (
+                                    <div key={step.number} className="flex items-start gap-3 sm:gap-4">
+                                        <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 border border-gray-300">
+                                            <span className="text-black font-bold text-sm sm:text-base lg:text-lg">
+                                                {step.number}
+                                            </span>
+                                        </div>
+                                        <div className="flex-1">
+                                            <h4 className="font-semibold text-black text-base sm:text-lg mb-1 sm:mb-2">
+                                                {step.title}
+                                            </h4>
+                                            <p className="text-gray-600 text-sm sm:text-base">
+                                                {step.description}
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div className="flex-1">
-                                        <h4 className="font-semibold text-black text-base sm:text-lg mb-1 sm:mb-2">
-                                            {t('home.steps.host.step1.title')}
-                                        </h4>
-                                        <p className="text-gray-600 text-sm sm:text-base">
-                                            {t('home.steps.host.step1.description')}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3 sm:gap-4">
-                                    <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 border border-gray-300">
-                                        <span className="text-black font-bold text-sm sm:text-base lg:text-lg">
-                                            2
-                                        </span>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h4 className="font-semibold text-black text-base sm:text-lg mb-1 sm:mb-2">
-                                            {t('home.steps.host.step2.title')}
-                                        </h4>
-                                        <p className="text-gray-600 text-sm sm:text-base">
-                                            {t('home.steps.host.step2.description')}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3 sm:gap-4">
-                                    <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 border border-gray-300">
-                                        <span className="text-black font-bold text-sm sm:text-base lg:text-lg">
-                                            3
-                                        </span>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h4 className="font-semibold text-black text-base sm:text-lg mb-1 sm:mb-2">
-                                            {t('home.steps.host.step3.title')}
-                                        </h4>
-                                        <p className="text-gray-600 text-sm sm:text-base">
-                                            {t('home.steps.host.step3.description')}
-                                        </p>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -183,7 +187,7 @@ export default function Home() {
             </section>
 
             {/* Safety Section */}
-            <section className="py-10 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-12 bg-gray-50">
+            <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-16 bg-gray-50">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black mb-6 sm:mb-8">
                         {t('home.safetyFirst')}
@@ -192,39 +196,19 @@ export default function Home() {
                         {t('home.safetyDescription')}
                     </p>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                        <div className="p-4 sm:p-6">
-                            <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 border border-gray-300">
-                                <span className="text-3xl sm:text-4xl lg:text-5xl">🛡️</span>
+                        {safetyItems.map((item) => (
+                            <div key={item.key} className={`p-4 sm:p-6 ${item.wrapperClass}`}>
+                                <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 border border-gray-300">
+                                    <span className="text-3xl sm:text-4xl lg:text-5xl">{item.icon}</span>
+                                </div>
+                                <h3 className="font-bold text-black mb-2 text-base sm:text-lg">
+                                    {item.title}
+                                </h3>
+                                <p className="text-gray-600 text-sm sm:text-base">
+                                    {item.description}
+                                </p>
                             </div>
-                            <h3 className="font-bold text-black mb-2 text-base sm:text-lg">
-                                {t('home.safety.verifiedUsers')}
-                            </h3>
-                            <p className="text-gray-600 text-sm sm:text-base">
-                                {t('home.safety.verifiedUsersDesc')}
-                            </p>
-                        </div>
-                        <div className="p-4 sm:p-6">
-                            <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 border border-gray-300">
-                                <span className="text-3xl sm:text-4xl lg:text-5xl">🔒</span>
-                            </div>
-                            <h3 className="font-bold text-black mb-2 text-base sm:text-lg">
-                                {t('home.safety.insuranceCoverage')}
-                            </h3>
-                            <p className="text-gray-600 text-sm sm:text-base">
-                                {t('home.safety.insuranceCoverageDesc')}
-                            </p>
-                        </div>
-                        <div className="p-4 sm:p-6 sm:col-span-2 lg:col-span-1">
-                            <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 border border-gray-300">
-                                <span className="text-3xl sm:text-4xl lg:text-5xl">💳</span>
-                            </div>
-                            <h3 className="font-bold text-black mb-2 text-base sm:text-lg">
-                                {t('home.safety.securePayments')}
-                            </h3>
-                            <p className="text-gray-600 text-sm sm:text-base">
-                                {t('home.safety.securePaymentsDesc')}
-                            </p>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </section>

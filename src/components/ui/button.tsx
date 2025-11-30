@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils';
 import { motionVariants, standardMotionConfig } from './motion-config';
 
 const buttonVariants = cva(
-    'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed btn-interactive',
+    'inline-flex items-center justify-center whitespace-nowrap rounded-md text-[15px] font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed btn-interactive',
     {
         variants: {
             variant: {
@@ -29,10 +29,10 @@ const buttonVariants = cva(
                     'bg-black text-white hover:bg-gray-800 shadow-lg hover:shadow-xl border-2 border-black',
             },
             size: {
-                default: 'h-10 px-4 py-2',
-                sm: 'h-9 rounded-md px-3',
-                lg: 'h-11 rounded-md px-8',
-                icon: 'h-10 w-10',
+                default: 'h-11 px-5 py-2.5',
+                sm: 'h-10 rounded-md px-4',
+                lg: 'h-12 rounded-lg px-8',
+                icon: 'h-11 w-11',
             },
             animation: {
                 none: '',
@@ -100,7 +100,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             >
                 {loading && (
                     <motion.div
-                        className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent"
+                        className="mr-2 h-5 w-5 animate-spin rounded-full border-2 border-current border-t-transparent"
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.2 }}
